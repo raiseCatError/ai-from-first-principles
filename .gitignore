@@ -1,0 +1,41 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# Jupyter/editor
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/
+# Training data/weights/logging (do not commit corpora or secrets)
+.env
+.env.*
+!.env.example
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.h5
+*.hdf5
+*.onnx
+*.npy
+*.npz
+*.parquet
+*.arrow
+*.feather
+*.bin
+*.tfrecord
+wandb/
+runs/
+checkpoints/
+models/
+data/raw/
+data/downloaded/
+cache/
+output/
+outputs/
+artifacts/
+*.log

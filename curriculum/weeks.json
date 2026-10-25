@@ -1,0 +1,790 @@
+[
+  {
+    "week": 1,
+    "phase": "Foundations",
+    "title": "Python scientific computing",
+    "study": "NumPy absolute beginners: creating arrays, dtype, indexing, broadcasting and shapes",
+    "math": "Vectors, matrices, shape rules",
+    "build": "Finish exercises/week-01; implement elementwise operations and a dot product by loops, then validate with NumPy",
+    "verify": "Shape/error handling tests; explain how an (m,n) matrix combines with an (n,p) matrix",
+    "resources": [
+      "numpy",
+      "d2l",
+      "3b1b_la"
+    ],
+    "stretch": "Write a tiny vector class",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 2,
+    "phase": "Foundations",
+    "title": "Linear algebra in code",
+    "study": "3Blue1Brown Essence of Linear Algebra: vectors, linear transformations, matrix products",
+    "math": "Dot products, transpose, matrix multiplication, norms",
+    "build": "Implement matrix multiply with explicit loops; compare with NumPy using multiple shapes",
+    "verify": "Hand-check a 2x2 example and test against np.matmul for 10 seeded random inputs",
+    "resources": [
+      "3b1b_la",
+      "d2l"
+    ],
+    "stretch": "Implement a simple linear transformation visualizer",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 3,
+    "phase": "Foundations",
+    "title": "Derivatives and computation graphs",
+    "study": "3Blue1Brown Essence of Calculus: derivative and chain rule",
+    "math": "Single-variable derivatives, partial derivatives, chain rule",
+    "build": "Implement centered finite differences; numerically estimate gradients on simple functions",
+    "verify": "Match analytic and finite-difference derivatives within an explained tolerance",
+    "resources": [
+      "3b1b_calc",
+      "d2l"
+    ],
+    "stretch": "Visualize slopes around a minimum",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 4,
+    "phase": "Foundations",
+    "title": "Probability, coding hygiene and optimization",
+    "study": "D2L preliminaries: probability, calculus, autograd; Python unittest and venv basics",
+    "math": "Expectations, variance, logarithms, gradient direction",
+    "build": "Simulate noisy observations; use gradient descent to minimize a convex loss",
+    "verify": "Show loss curve and a test comparing estimated and analytic gradients",
+    "resources": [
+      "d2l",
+      "numpy"
+    ],
+    "stretch": "Implement a tiny normal-distribution sampler",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 5,
+    "phase": "Classical ML",
+    "title": "Regression: data to learning",
+    "study": "Andrew C1 W1: supervised/unsupervised, linear regression, cost, gradient descent",
+    "math": "Mean squared error, partial derivatives",
+    "build": "Univariate regression from scratch; no sklearn estimators",
+    "verify": "Seeded synthetic data: recover known slope/intercept and show loss decreases",
+    "resources": [
+      "andrew",
+      "d2l"
+    ],
+    "stretch": "Experiment with noise and bad learning rates",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 6,
+    "phase": "Classical ML",
+    "title": "Vectorized multivariable regression",
+    "study": "Andrew C1 W2: multiple regression, vectorization, gradient descent in practice",
+    "math": "Matrix form of predictions and gradients",
+    "build": "Build multivariate linear regression in NumPy with standardization",
+    "verify": "Compare against closed-form least squares on nonsingular synthetic data",
+    "resources": [
+      "andrew",
+      "numpy"
+    ],
+    "stretch": "Implement mini-batch SGD",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 7,
+    "phase": "Classical ML",
+    "title": "Logistic regression and classification",
+    "study": "Andrew C1 W3: sigmoid, logistic loss, gradients, overfitting, regularization",
+    "math": "Sigmoid, log loss, derivatives, L2 regularization",
+    "build": "Binary logistic regression from scratch with NumPy",
+    "verify": "Track validation accuracy and log loss; contrast regularized vs unregularized",
+    "resources": [
+      "andrew",
+      "d2l"
+    ],
+    "stretch": "Compare calibration curves",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 8,
+    "phase": "Classical ML",
+    "title": "Generalization and reliable experiments",
+    "study": "Andrew C2 W3: diagnostics, bias/variance, train/dev/test advice; skim C2 W1-2 neural intuition",
+    "math": "Variance, sampling, overfitting, data leakage",
+    "build": "Reusable train/validation/test split and metric suite with confusion matrix",
+    "verify": "Deliberately inject leakage, identify and fix it; show metric changes",
+    "resources": [
+      "andrew"
+    ],
+    "stretch": "Add k-fold cross validation",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 9,
+    "phase": "Classical ML",
+    "title": "Trees and unsupervised learning",
+    "study": "Andrew C2 W4 decision trees; C3 W1 clustering/anomaly detection",
+    "math": "Impurity/entropy; Euclidean distances",
+    "build": "Build a small decision-tree classifier and k-means from scratch",
+    "verify": "Check tree on XOR-style example and cluster centroids on seeded blobs",
+    "resources": [
+      "andrew"
+    ],
+    "stretch": "Try isolation/novelty detection with own baseline",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 10,
+    "phase": "Classical ML",
+    "title": "ML capstone and reinforcement-learning preview",
+    "study": "Andrew C3 W2 PCA selective; C3 W3 RL introduction (preview only)",
+    "math": "Eigenvectors intuition, variance directions, expected reward",
+    "build": "Train and compare 3 classical models on one dataset; implement 2-D PCA",
+    "verify": "Publish results table, baseline, failure analysis, data card and tests",
+    "resources": [
+      "andrew",
+      "rl"
+    ],
+    "stretch": "Try collaborative filtering as optional extra",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 11,
+    "phase": "Neural Networks",
+    "title": "Micrograd introduction",
+    "study": "Karpathy Zero to Hero Lecture 1: first half; pause and derive every local derivative",
+    "math": "Chain rule, scalar derivatives",
+    "build": "Create Value data structure and scalar operation graph without automatic differentiation yet",
+    "verify": "Unit tests for addition/multiplication and numerical derivative checks",
+    "resources": [
+      "karpathy",
+      "micrograd",
+      "karpathy_l1"
+    ],
+    "stretch": "Support pow, tanh, exp operations",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 12,
+    "phase": "Neural Networks",
+    "title": "Automatic differentiation",
+    "study": "Karpathy Lecture 1: finish reverse-mode autodiff; Andrew C2 W1 neural intuition optional",
+    "math": "Reverse-mode chain rule, topological ordering",
+    "build": "Implement Value.backward with topological order and accumulation",
+    "verify": "Finite-difference gradient checks on branched graphs and shared nodes",
+    "resources": [
+      "karpathy",
+      "andrew",
+      "karpathy_l1"
+    ],
+    "stretch": "Plot a tiny computation graph",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 13,
+    "phase": "Neural Networks",
+    "title": "A trainable neuron and MLP",
+    "study": "Karpathy Lecture 1: neuron/layer/MLP; replay only confusing sections",
+    "math": "Affine transforms, activation derivatives",
+    "build": "Build Neuron, Layer and MLP objects on own autograd",
+    "verify": "Train a tiny network to fit a nonlinear function; validate parameter updates",
+    "resources": [
+      "karpathy",
+      "micrograd",
+      "karpathy_l1"
+    ],
+    "stretch": "Try different activation functions",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 14,
+    "phase": "Neural Networks",
+    "title": "Training dynamics",
+    "study": "Karpathy lecture 1 review; D2L MLP and optimization references",
+    "math": "Gradient descent vs SGD, learning rates, initialization",
+    "build": "Train XOR; add reproducible seeding, learning-rate sweep, plotted metrics",
+    "verify": "Beat 50% XOR accuracy and explain any unstable runs",
+    "resources": [
+      "karpathy",
+      "d2l",
+      "karpathy_l1"
+    ],
+    "stretch": "Compare initialization strategies",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 15,
+    "phase": "Neural Networks",
+    "title": "Backprop debugging",
+    "study": "Karpathy Lecture 5 backprop ninja as preview; focus on gradient debugging, not completing lecture",
+    "math": "Jacobian intuition, chain rule in multi-layer graphs",
+    "build": "Implement automated finite-difference gradient checks and diagnostics",
+    "verify": "Check multiple random graphs, train/test separation and zero_grad behavior",
+    "resources": [
+      "karpathy",
+      "karpathy_repo",
+      "karpathy_l1"
+    ],
+    "stretch": "Add gradient clipping as an experiment",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 16,
+    "phase": "Neural Networks",
+    "title": "Autodiff engine capstone",
+    "study": "Review micrograd implementation only after your implementation passes tests",
+    "math": "Computation graph correctness, autodiff limitations",
+    "build": "Package and document your from-scratch scalar autodiff MLP",
+    "verify": "One command runs all tests; demo converges; explain design without video",
+    "resources": [
+      "micrograd",
+      "karpathy_l1"
+    ],
+    "stretch": "Build vector-valued primitive operations",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 17,
+    "phase": "Deep Learning",
+    "title": "Tensor PyTorch fundamentals",
+    "study": "PyTorch beginner basics: tensors, autograd, model, optimization",
+    "math": "Vectorized derivatives and tensor broadcasting",
+    "build": "Recreate micrograd XOR network in PyTorch; compare gradients",
+    "verify": "Match sign/magnitude of gradients with known reference computations",
+    "resources": [
+      "pytorch",
+      "karpathy"
+    ],
+    "stretch": "Try MPS backend where supported",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 18,
+    "phase": "Deep Learning",
+    "title": "Text bigrams and makemore",
+    "study": "Karpathy Lecture 2: makemore (bigram); model training / sampling",
+    "math": "Cross-entropy, softmax, log likelihood",
+    "build": "From-scratch count-based and neural character bigram models",
+    "verify": "Holdout NLL improves against naive uniform baseline; sample characters",
+    "resources": [
+      "karpathy",
+      "makemore",
+      "karpathy_l2"
+    ],
+    "stretch": "Compare Laplace-smoothed counts",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 19,
+    "phase": "Deep Learning",
+    "title": "Embedding and language MLP",
+    "study": "Karpathy Lecture 3: makemore Part 2 MLP",
+    "math": "Embedding lookup, matrix products, softmax",
+    "build": "Train a context-window MLP language model in PyTorch",
+    "verify": "Validation NLL, sampled text and loss plots recorded",
+    "resources": [
+      "karpathy",
+      "makemore",
+      "karpathy_l3"
+    ],
+    "stretch": "Ablate context window length",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 20,
+    "phase": "Deep Learning",
+    "title": "Activation, gradient and initialization diagnostics",
+    "study": "Karpathy Lecture 4: makemore Part 3; MIT 6.S191 deep learning introduction as supplement",
+    "math": "Distribution of activations/gradients, normalization",
+    "build": "Visualize activation and gradient distributions; try normalization",
+    "verify": "Report stability and validation loss under two seeds",
+    "resources": [
+      "karpathy",
+      "mit",
+      "karpathy_l4"
+    ],
+    "stretch": "Compare tanh and ReLU",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 21,
+    "phase": "Deep Learning",
+    "title": "Backprop by hand in tensor models",
+    "study": "Karpathy Lecture 5: makemore Part 4 manual backprop",
+    "math": "Tensor chain rule, gradient flow and dimensions",
+    "build": "Implement manual backprop for a small MLP language model",
+    "verify": "Numerical checks and comparison with PyTorch autograd",
+    "resources": [
+      "karpathy",
+      "makemore",
+      "karpathy_l5"
+    ],
+    "stretch": "Implement a fused softmax-cross-entropy gradient",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 22,
+    "phase": "Deep Learning",
+    "title": "Deeper networks and baseline language model",
+    "study": "Karpathy Lecture 6: WaveNet hierarchy; optional MIT sequence modeling / vision",
+    "math": "Receptive fields, residual/skip connections intuition",
+    "build": "Construct deeper causal sequence model and baseline comparison",
+    "verify": "Freeze splits/seeds and publish language-model baseline report",
+    "resources": [
+      "karpathy",
+      "mit",
+      "karpathy_l6"
+    ],
+    "stretch": "Train an image classifier as second modality",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 23,
+    "phase": "LLMs From Scratch",
+    "title": "Tokenizers: character and bytes",
+    "study": "Karpathy Lecture 8: tokenizer (first pass); Stanford CS336 A1 tokenizer spec",
+    "math": "Information representation, Unicode/byte encodings",
+    "build": "Implement character tokenizer and UTF-8 byte tokenizer",
+    "verify": "Round-trip tests for ASCII, Unicode, punctuation and edge cases",
+    "resources": [
+      "karpathy",
+      "minbpe",
+      "cs336",
+      "karpathy_l8"
+    ],
+    "stretch": "Benchmark vocabulary tradeoffs",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 24,
+    "phase": "LLMs From Scratch",
+    "title": "Byte pair encoding",
+    "study": "Karpathy tokenizer lecture finish; Stanford CS336 A1 BPE",
+    "math": "Frequency counts, greedy pair merges",
+    "build": "Implement BPE training and encoding from scratch",
+    "verify": "Round-trip and determinism tests; compare compression/token count",
+    "resources": [
+      "minbpe",
+      "cs336",
+      "karpathy_l8"
+    ],
+    "stretch": "Implement tokenizer benchmarks on several corpora",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 25,
+    "phase": "LLMs From Scratch",
+    "title": "Attention mathematics",
+    "study": "Attention Is All You Need; Karpathy Lecture 7 beginning",
+    "math": "Matrix shapes, Q/K/V, dot-product scaling, softmax",
+    "build": "Single-head self-attention with numpy then PyTorch",
+    "verify": "Check causal masking, attention row sums and tensor shapes",
+    "resources": [
+      "attention",
+      "karpathy",
+      "karpathy_l7",
+      "cs336_a1"
+    ],
+    "stretch": "Hand-calculate a two-token attention example",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 26,
+    "phase": "LLMs From Scratch",
+    "title": "Causal self-attention and multi-heads",
+    "study": "Karpathy Lecture 7 attention portion; Stanford CS336 Transformer basics",
+    "math": "Scaled dot-product, causal masking",
+    "build": "Implement multi-head causal attention and positional embeddings",
+    "verify": "No future-token leakage; compare with explicit tiny reference",
+    "resources": [
+      "karpathy",
+      "cs336",
+      "karpathy_l7",
+      "cs336_a1"
+    ],
+    "stretch": "Explore learned vs sinusoidal positions",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 27,
+    "phase": "LLMs From Scratch",
+    "title": "Transformer block construction",
+    "study": "Stanford CS336 A1 architecture; reread original Transformer paper",
+    "math": "LayerNorm, residuals, GELU, dimensional analysis",
+    "build": "Build decoder-only block: norm, attention, MLP, residual connections",
+    "verify": "Tests for output shape, finite loss, gradient propagation",
+    "resources": [
+      "cs336",
+      "attention",
+      "karpathy_l7",
+      "cs336_a1"
+    ],
+    "stretch": "Compare pre-norm and post-norm",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 28,
+    "phase": "LLMs From Scratch",
+    "title": "Full tiny GPT architecture",
+    "study": "Karpathy GPT lecture complete; Stanford CS336 A1 model sections",
+    "math": "Autoregressive next-token likelihood",
+    "build": "Stack decoder blocks, embedding, LM head, causal loss and generation",
+    "verify": "Model can overfit a tiny batch; no pretrained model weights",
+    "resources": [
+      "karpathy",
+      "cs336",
+      "nanogpt",
+      "karpathy_l7",
+      "cs336_a1"
+    ],
+    "stretch": "Tie output embeddings as experiment",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 29,
+    "phase": "LLMs From Scratch",
+    "title": "Optimization and training engine",
+    "study": "Stanford CS336 A1 optimizer/training; AdamW paper",
+    "math": "Adam moments, decay, learning-rate schedules",
+    "build": "Implement training loop with optimizer, clipping, checkpoint and resume",
+    "verify": "Resume equivalence within stated tolerance; gradients and metrics reproducible",
+    "resources": [
+      "cs336",
+      "adamw",
+      "cs336_a1"
+    ],
+    "stretch": "Implement AdamW manually before comparing to PyTorch",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 30,
+    "phase": "LLMs From Scratch",
+    "title": "Pretrain a tiny GPT",
+    "study": "Karpathy GPT training discussion; Stanford CS336 A1 training experiment",
+    "math": "Perplexity, batch tokens, data splits",
+    "build": "Pretrain a tiny random-initialized GPT on a permitted text corpus",
+    "verify": "Train/test loss and sampling; record exact data provenance, compute, config",
+    "resources": [
+      "cs336",
+      "nanogpt",
+      "cs336_a1"
+    ],
+    "stretch": "Compare 2 context lengths",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 31,
+    "phase": "LLMs From Scratch",
+    "title": "Decoding and inference",
+    "study": "Karpathy nanoGPT generation and tokenizer references",
+    "math": "Sampling distributions, temperature, top-k",
+    "build": "Implement sampling options and KV cache as separate experiment",
+    "verify": "Compare cached and uncached outputs/logits under matched settings",
+    "resources": [
+      "nanogpt",
+      "minbpe",
+      "cs336_a1"
+    ],
+    "stretch": "Top-p sampling and repeat penalty",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 32,
+    "phase": "LLMs From Scratch",
+    "title": "LLM capstone and evaluation",
+    "study": "Stanford CS336 A1 evaluation; selectively read A3 scaling context",
+    "math": "Generalization, loss/perplexity, ablation design",
+    "build": "Publish tiny GPT model card, tests, learning curves, ablation and limitations",
+    "verify": "Reproduce same run twice where feasible; independent holdout evaluation",
+    "resources": [
+      "cs336",
+      "cs336_a1"
+    ],
+    "stretch": "Fit a primitive parameter-count trend",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 33,
+    "phase": "Reinforcement Learning",
+    "title": "MDPs and value functions",
+    "study": "OpenAI Spinning Up RL Key Concepts sections on states, actions, returns, Bellman",
+    "math": "Expectations, discounting, Bellman recursion",
+    "build": "Implement a small grid world and random policy baseline",
+    "verify": "Deterministic transition tests and evaluated average return",
+    "resources": [
+      "rl"
+    ],
+    "stretch": "Compare episodic and discounted objectives",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 34,
+    "phase": "Reinforcement Learning",
+    "title": "Tabular Q-learning",
+    "study": "OpenAI Spinning Up value-based methods and Q-functions",
+    "math": "Bellman optimality, epsilon-greedy exploration",
+    "build": "Train tabular Q-learning in a grid world/FrozenLake-like environment",
+    "verify": "Learning curve versus random baseline across multiple seeds",
+    "resources": [
+      "rl",
+      "gym"
+    ],
+    "stretch": "Implement SARSA and compare",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 35,
+    "phase": "Reinforcement Learning",
+    "title": "DQN fundamentals",
+    "study": "Berkeley CS285 value learning lectures; Spinning Up RL algorithms overview",
+    "math": "Bootstrapped targets, temporal difference loss",
+    "build": "Build DQN with replay buffer and target network",
+    "verify": "Plot episode-return improvements, detect divergence",
+    "resources": [
+      "berkeley",
+      "gym"
+    ],
+    "stretch": "Ablate target network",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 36,
+    "phase": "Reinforcement Learning",
+    "title": "DQN evaluated properly",
+    "study": "Berkeley CS285 material on Q-learning and training stability",
+    "math": "Variance, evaluation over seeds",
+    "build": "Train DQN on CartPole or equivalent classic control task",
+    "verify": "Compare 3+ seeds with random policy, include failure cases",
+    "resources": [
+      "berkeley",
+      "gym"
+    ],
+    "stretch": "Double DQN",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 37,
+    "phase": "Reinforcement Learning",
+    "title": "Policy gradients",
+    "study": "Spinning Up Part 3: simplest policy gradient; Berkeley policy-gradient lectures",
+    "math": "Log derivative trick, policy gradient theorem intuition",
+    "build": "Implement REINFORCE from scratch in PyTorch",
+    "verify": "Demonstrate improvement in average return with learning curves",
+    "resources": [
+      "rlpg",
+      "berkeley"
+    ],
+    "stretch": "Reward-to-go variance comparison",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 38,
+    "phase": "Reinforcement Learning",
+    "title": "Baselines and actor-critic",
+    "study": "Spinning Up policy gradient baseline section; Berkeley actor-critic lectures",
+    "math": "Advantage estimation, bias-variance tradeoff",
+    "build": "Add critic and value baseline to policy-gradient agent",
+    "verify": "Compare gradient/return variance and stability vs REINFORCE",
+    "resources": [
+      "rlpg",
+      "berkeley"
+    ],
+    "stretch": "Generalized advantage estimation",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 39,
+    "phase": "Reinforcement Learning",
+    "title": "PPO and training stability",
+    "study": "PPO original paper; Berkeley PPO lecture/material",
+    "math": "Importance ratios, clipped surrogate objective",
+    "build": "Implement minimal PPO on a simple environment",
+    "verify": "Unit tests for clipping terms and train/eval isolation",
+    "resources": [
+      "ppo",
+      "berkeley"
+    ],
+    "stretch": "Compare clipping hyperparameters",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 40,
+    "phase": "Reinforcement Learning",
+    "title": "RL agent capstone",
+    "study": "Review Spinning Up experiments and Berkeley evaluation guidance",
+    "math": "Statistical uncertainty, confidence intervals",
+    "build": "Build reproducible environment + agent comparison suite",
+    "verify": "3 algorithms, multiple seeds, random/scripted baselines, clear report",
+    "resources": [
+      "rl",
+      "berkeley"
+    ],
+    "stretch": "Adapt a simple terminal minigame to the simulator",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 41,
+    "phase": "Post-training & Agents",
+    "title": "Instruction tuning fundamentals",
+    "study": "Stanford CS336 A5: supervised finetuning overview; model/data cards",
+    "math": "Cross-entropy with masked target positions",
+    "build": "Construct small instruction dataset and supervised-tuning experiment",
+    "verify": "Compare held-out instruction evaluations with pretrained baseline",
+    "resources": [
+      "cs336"
+    ],
+    "stretch": "Build data quality checks and contamination guard",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 42,
+    "phase": "Post-training & Agents",
+    "title": "Parameter-efficient fine-tuning and evaluation",
+    "study": "Stanford CS336 post-training lectures; practical PyTorch fine-tuning patterns",
+    "math": "Memory tradeoffs, gradient accumulation",
+    "build": "Fine-tune a manageable existing open-weight small model or your tiny model",
+    "verify": "Report model license, hardware cost, reproducible metrics",
+    "resources": [
+      "cs336",
+      "pytorch"
+    ],
+    "stretch": "Implement LoRA low-rank module yourself",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 43,
+    "phase": "Post-training & Agents",
+    "title": "Preferences, reward models and DPO",
+    "study": "Stanford CS336 A5 alignment; DPO paper",
+    "math": "Pairwise preferences, log probabilities, KL intuition",
+    "build": "Create toy preference pairs; implement a small reward/preference objective",
+    "verify": "Unit test preference-label reversal and numerical stability",
+    "resources": [
+      "cs336",
+      "dpo"
+    ],
+    "stretch": "Compare DPO and simple supervised finetuning",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 44,
+    "phase": "Post-training & Agents",
+    "title": "Raw tool-use loop (no framework)",
+    "study": "Hugging Face Agents Unit 1 concepts only; implement Python functions yourself",
+    "math": "State machine/control flow, basic probability of failures",
+    "build": "Create safe typed tool registry, action/observation loop, termination",
+    "verify": "Offline deterministic mock model tests for action routing and max steps",
+    "resources": [
+      "hf_agents"
+    ],
+    "stretch": "Introduce strict JSON schema validation",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 45,
+    "phase": "Post-training & Agents",
+    "title": "Planning, memory and recovery",
+    "study": "Read and critique agent reasoning/memory designs; revisit HF agents",
+    "math": "Search/planning and error propagation",
+    "build": "Add short-term state, retrieval, retries and tool-error handling",
+    "verify": "Tests for loops, stale memory, invalid commands, prompt injection resistance",
+    "resources": [
+      "hf_agents"
+    ],
+    "stretch": "Plan-and-execute versus reactive baseline",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 46,
+    "phase": "Post-training & Agents",
+    "title": "Agent evaluation and safety",
+    "study": "Stanford CS336 A5 evaluation mindset; HF course agent evaluations",
+    "math": "Success metrics, confidence intervals, baselines",
+    "build": "Build benchmark harness of 20+ fixed tasks and deterministic mock cases",
+    "verify": "Pass/fail per task, tool call count, cost, latency, no silent success claims",
+    "resources": [
+      "cs336",
+      "hf_agents"
+    ],
+    "stretch": "Compare two planning strategies",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 47,
+    "phase": "Post-training & Agents",
+    "title": "Reasoning RL and post-training experiment",
+    "study": "Stanford CS336 A5: alignment and reasoning RL; Berkeley LLM RL as advanced optional",
+    "math": "Policy optimization, reward hacking, evaluation leakage",
+    "build": "Replicate a modest toy RL-for-reasoning experiment in constrained compute",
+    "verify": "Publish reward definition, baseline, holdout outcomes and failure modes",
+    "resources": [
+      "cs336",
+      "berkeley"
+    ],
+    "stretch": "Analyze how reward design affects generalization",
+    "hours": 12,
+    "state": "not-started"
+  },
+  {
+    "week": 48,
+    "phase": "Post-training & Agents",
+    "title": "Independent AI research capstone",
+    "study": "Read one relevant research paper plus its implementation; write replication protocol",
+    "math": "Hypothesis testing, ablations, seed variance",
+    "build": "Choose one prior model/agent component; improve or falsify one hypothesis",
+    "verify": "Reproducible report with protocol, baseline, ablation, limits and code",
+    "resources": [
+      "cs336",
+      "berkeley"
+    ],
+    "stretch": "Submit an independent public technical writeup",
+    "hours": 12,
+    "state": "not-started"
+  }
+]

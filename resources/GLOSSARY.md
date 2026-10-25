@@ -1,0 +1,22 @@
+# Concise concept glossary
+
+- **Parameter / weight:** learned numerical value adjusted during training.
+- **Bias:** trainable offset in an affine transformation; also can mean systematic model error (different meaning).
+- **Gradient:** derivatives of a scalar objective with respect to its parameters.
+- **Backpropagation:** reverse-mode application of the chain rule through a computation graph.
+- **Optimizer:** algorithm applying gradients to update parameters (SGD, AdamW).
+- **Loss / objective:** number measuring how badly predictions match a training criterion.
+- **Training vs inference:** updating model parameters vs using fixed parameters for predictions/actions.
+- **Generalization:** performance on data not used to fit the model.
+- **Data leakage:** evaluation information accidentally available during learning or model selection.
+- **Embedding:** learned or designed vector representation of an item/token.
+- **Tokenizer:** maps strings to token IDs and back; its vocabulary and algorithm affect modeling.
+- **Autoregressive LM:** estimates each next token conditional on previous tokens.
+- **Transformer:** neural architecture using attention and feed-forward blocks (among other components).
+- **Attention:** learned interaction weights among sequence positions/representations.
+- **Pretraining:** initial training on a broad objective such as next-token prediction.
+- **Fine-tuning:** additional training adapting a pretrained model.
+- **RL policy:** rule/model choosing actions in an environment.
+- **Value function:** estimates expected future cumulative reward.
+- **LLM-based agent:** system that wraps a model with state, tool-use and a control loop; not necessarily a newly learned policy.
+- **Ablation:** controlled experiment removing/changing one component to test its contribution.

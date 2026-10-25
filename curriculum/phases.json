@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Foundations",
+    "start": 1,
+    "end": 4
+  },
+  {
+    "name": "Classical ML",
+    "start": 5,
+    "end": 10
+  },
+  {
+    "name": "Neural Networks",
+    "start": 11,
+    "end": 16
+  },
+  {
+    "name": "Deep Learning",
+    "start": 17,
+    "end": 22
+  },
+  {
+    "name": "LLMs From Scratch",
+    "start": 23,
+    "end": 32
+  },
+  {
+    "name": "Reinforcement Learning",
+    "start": 33,
+    "end": 40
+  },
+  {
+    "name": "Post-training & Agents",
+    "start": 41,
+    "end": 48
+  }
+]

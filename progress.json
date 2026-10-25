@@ -1,0 +1,341 @@
+{
+  "schema_version": 1,
+  "weeks": {
+    "01": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "02": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "03": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "04": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "05": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "06": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "07": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "08": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "09": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "10": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "11": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "12": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "13": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "14": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "15": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "16": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "17": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "18": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "19": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "20": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "21": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "22": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "23": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "24": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "25": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "26": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "27": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "28": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "29": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "30": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "31": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "32": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "33": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "34": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "35": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "36": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "37": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "38": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "39": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "40": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "41": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "42": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "43": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "44": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "45": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "46": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "47": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    },
+    "48": {
+      "state": "not-started",
+      "evidence": [],
+      "started_at": null,
+      "completed_at": null,
+      "blocked_reason": null
+    }
+  }
+}
